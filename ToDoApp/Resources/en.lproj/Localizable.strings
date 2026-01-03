@@ -1,0 +1,24 @@
+/* 
+ Localizable.strings
+ ToDoApp
+ 
+ Created by Hamid Mahmood on 1/1/26.
+ 
+ */
+
+todo_list_title = "To-Dos";
+todo_list_section_header = "Your To-Dos";
+
+/* Buttons */
+todo_button_load_remote = "Load Remote To-Dos";
+todo_button_add = "Add";
+
+/* Input */
+todo_input_placeholder = "New to-do";
+
+/* Status Labels */
+todo_status_completed = "Completed";
+todo_status_pending = "Pending";
+
+/* Fallbacks */
+todo_fallback_empty_title = "Untitled";
