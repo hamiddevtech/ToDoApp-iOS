@@ -30,7 +30,7 @@ final class RemoteTodoFetcherTests: XCTestCase {
         
         // Simulate a successful HTTP response
         let response = HTTPURLResponse(
-            url: URL(string: "https://test.com")!,
+            url: URL(string: "https://jsonplaceholder.typicode.com/todos")!,
             statusCode: 200,
             httpVersion: nil,
             headerFields: nil
@@ -54,7 +54,7 @@ final class RemoteTodoFetcherTests: XCTestCase {
     
     func testFetchRemoteTodos_invalidStatusCode() async {
         let response = HTTPURLResponse(
-            url: URL(string: "https://test.com")!,
+            url: URL(string: "https://jsonplaceholder.typicode.com/todos")!,
             statusCode: 500,
             httpVersion: nil,
             headerFields: nil
@@ -102,7 +102,7 @@ final class RemoteTodoFetcherTests: XCTestCase {
         
         // Intentionally NOT an HTTPURLResponse to fail the type cast
         session.urlResponse = URLResponse(
-            url: URL(string: "https://test.com")!,
+            url: URL(string: "https://jsonplaceholder.typicode.com/todos")!,
             mimeType: nil,
             expectedContentLength: 0,
             textEncodingName: nil
@@ -126,7 +126,7 @@ final class RemoteTodoFetcherTests: XCTestCase {
         """.data(using: .utf8)!
         
         let response = HTTPURLResponse(
-            url: URL(string: "https://test.com")!,
+            url: URL(string: "https://jsonplaceholder.typicode.com/todos")!,
             statusCode: 200,
             httpVersion: nil,
             headerFields: nil
